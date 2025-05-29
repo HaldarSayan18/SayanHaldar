@@ -32,19 +32,19 @@ const About = ({ islightmode }) => {
   }, []);
 
   const techStack = [
-    { src: "Portfolio-main/public/icons/html.png", alt: "html" },
-    { src: "Portfolio-main/public/icons/css.png", alt: "css" },
-    { src: "Portfolio-main/public/icons/JavaScript.png", alt: "javaScript" },
-    { src: "Portfolio-main/public/icons/java.png", alt: "java" },
-    { src: "Portfolio-main/public/icons/python.png", alt: "python" },
-    { src: "Portfolio-main/public/icons/react.png", alt: "react" },
-    // { src: "Portfolio-main/public/icons/node.png", alt: "Node.js" },
-    // { src: "Portfolio-main/public/icons/express.png", alt: "Express" },
-    { src: "Portfolio-main/public/icons/BootStrap.png", alt: "bootstrap" },
-    { src: "Portfolio-main/public/icons/tailwindcss.png", alt: "tailwind_css" },
-    { src: "Portfolio-main/public/icons/vscode.png", alt: "vscode" },
-    { src: "Portfolio-main/public/icons/sql.png", alt: "sql" },
-    { src: "Portfolio-main/public/icons/wordpress.png", alt: "wordpress" },
+    { src: "/public/icons/html.png", alt: "html" },
+    { src: "/public/icons/css.png", alt: "css" },
+    { src: "/public/icons/JavaScript.png", alt: "javaScript" },
+    { src: "/public/icons/java.png", alt: "java" },
+    { src: "/public/icons/python.png", alt: "python" },
+    { src: "/public/icons/react.png", alt: "react" },
+    // { src: "/public/icons/node.png", alt: "Node.js" },
+    // { src: "/public/icons/express.png", alt: "Express" },
+    { src: "/icons/BootStrap.png", alt: "bootstrap" },
+    { src: "/icons/tailwindcss.png", alt: "tailwind_css" },
+    { src: "/icons/vscode.png", alt: "vscode" },
+    { src: "/icons/sql.png", alt: "sql" },
+    { src: "/icons/wordpress.png", alt: "wordpress" },
   ];
 
   return (
