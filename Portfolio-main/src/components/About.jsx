@@ -7,6 +7,11 @@ import javaLogo from '../../public/icons/java.png';
 import webLogo from '../../public/icons/web.png';
 import pythonLogo from '../../public/icons/python.png';
 import sqlLogo from '../../public/icons/sql.png';
+import html from "../../public/icons/html.png";
+import css from "../../public/icons/css.png";
+import java from "../../public/icons/java.png";
+import javaScript from "../../public/icons/javaScript.png";
+import react from "../../public/icons/react.png";
 
 const About = ({ islightmode }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -32,18 +37,18 @@ const About = ({ islightmode }) => {
   }, []);
 
   const techStack = [
-    { src: "/public/icons/html.png", alt: "html" },
-    { src: "/public/icons/css.png", alt: "css" },
-    { src: "/public/icons/JavaScript.png", alt: "javaScript" },
-    { src: "/public/icons/java.png", alt: "java" },
-    { src: "/public/icons/python.png", alt: "python" },
-    { src: "/public/icons/react.png", alt: "react" },
+    { src: html, alt: "html" },
+    { src: css, alt: "css" },
+    { src: javaScript, alt: "javaScript" },
+    { src: java, alt: "java" },
+    { src: pythonLogo, alt: "python" },
+    { src: react, alt: "react" },
     // { src: "/public/icons/node.png", alt: "Node.js" },
     // { src: "/public/icons/express.png", alt: "Express" },
     { src: "/icons/BootStrap.png", alt: "bootstrap" },
     { src: "/icons/tailwindcss.png", alt: "tailwind_css" },
     { src: "/icons/vscode.png", alt: "vscode" },
-    { src: "/icons/sql.png", alt: "sql" },
+    { src: sql, alt: "sql" },
     { src: "/icons/wordpress.png", alt: "wordpress" },
   ];
 
