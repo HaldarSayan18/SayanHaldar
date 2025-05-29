@@ -32,19 +32,19 @@ const About = ({ islightmode }) => {
   }, []);
 
   const techStack = [
-    { src: "/icons/html.png", alt: "HTML" },
-    { src: "/icons/css.png", alt: "css" },
-    { src: "/icons/JavaScript.png", alt: "JavaScript" },
-    { src: "/icons/java.png", alt: "Java" },
-    { src: "/icons/python.png", alt: "python" },
-    { src: "/icons/react.png", alt: "React" },
-    // { src: "/icons/node.png", alt: "Node.js" },
-    // { src: "/icons/express.png", alt: "Express" },
-    { src: "/icons/BootStrap.png", alt: "BootStrap" },
-    { src: "/icons/tailwindcss.png", alt: "Tailwind CSS" },
-    { src: "/icons/vscode.png", alt: "vscode" },
-    { src: "/icons/sql.png", alt: "sql" },
-    { src: "/icons/wordpress.png", alt: "wordpress" },
+    { src: "Portfolio-main\public\icons\html.png", alt: "HTML" },
+    { src: "Portfolio-main\public\icons\css.png", alt: "css" },
+    { src: "Portfolio-main\public\icons\JavaScript.png", alt: "JavaScript" },
+    { src: "Portfolio-main\public\icons\java.png", alt: "Java" },
+    { src: "Portfolio-main\public\icons\python.png", alt: "python" },
+    { src: "Portfolio-main\public\icons\react.png", alt: "React" },
+    // { src: "Portfolio-main\public\icons\node.png", alt: "Node.js" },
+    // { src: "Portfolio-main\public\icons\express.png", alt: "Express" },
+    { src: "Portfolio-main\public\icons\BootStrap.png", alt: "BootStrap" },
+    { src: "Portfolio-main\public\icons\tailwindcss.png", alt: "Tailwind CSS" },
+    { src: "Portfolio-main\public\icons\vscode.png", alt: "vscode" },
+    { src: "Portfolio-main\public\icons\sql.png", alt: "sql" },
+    { src: "Portfolio-main\public\icons\wordpress.png", alt: "wordpress" },
   ];
 
   return (
