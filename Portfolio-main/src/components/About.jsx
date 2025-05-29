@@ -12,6 +12,10 @@ import css from "../../public/icons/css.png";
 import java from "../../public/icons/java.png";
 import javaScript from "../../public/icons/javaScript.png";
 import react from "../../public/icons/react.png";
+import bootstrap from "../../public/icons/Bootstrap.png";
+import tailwind from "../../public/icons/tailwindcss.png";
+import wordpress from "../../public/icons/wordpress.png";
+import vscode from "../../public/icons/vscode.png";
 
 const About = ({ islightmode }) => {
   const [isVisible, setIsVisible] = useState(false);
@@ -45,11 +49,11 @@ const About = ({ islightmode }) => {
     { src: react, alt: "react" },
     // { src: "/public/icons/node.png", alt: "Node.js" },
     // { src: "/public/icons/express.png", alt: "Express" },
-    { src: "/icons/BootStrap.png", alt: "bootstrap" },
-    { src: "/icons/tailwindcss.png", alt: "tailwind_css" },
-    { src: "/icons/vscode.png", alt: "vscode" },
-    { src: sql, alt: "sql" },
-    { src: "/icons/wordpress.png", alt: "wordpress" },
+    { src: bootstrap, alt: "bootstrap" },
+    { src: tailwind, alt: "tailwind_css" },
+    { src: vscode, alt: "vscode" },
+    { src: sqlLogo, alt: "sql" },
+    { src: wordpress, alt: "wordpress" },
   ];
 
   return (
