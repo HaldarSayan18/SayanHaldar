@@ -2,6 +2,7 @@ import React from "react";
 import { ExternalLink } from "lucide-react";
 
 import rockpaperscissor from "../../public/images/rockpaperscissor.png";
+import todo from "../../public/images/todo.jpg";
 
 const Projects = ({ islightmode }) => {
   const projects = [
@@ -19,7 +20,7 @@ const Projects = ({ islightmode }) => {
         "Developed a simple todo list using react basics, where there is some data already present and one can add more tasks and can remove those data/tasks individually.",
       tech: ["HTML", "CSS", "Bootstrap", "JavaScript", "React Js", "Dummy API"],
       link: "https://github.com/HaldarSayan18/ToDo_list",
-      image: rockpaperscissor,
+      image: todo,
     },
   ];
 
