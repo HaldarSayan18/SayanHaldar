@@ -1,50 +1,26 @@
 import React from "react";
 import { ExternalLink } from "lucide-react";
 
+import rockpaperscissor from "../../public/images/rockpaperscissor.png";
+
 const Projects = ({ islightmode }) => {
   const projects = [
     {
-      title: "Wanderlust",
+      title: "Rock_Paper_Scissor",
       description:
-        "An online marketplace that connects travelers with property owners who want to rent out their accommodations.",
-      tech: ["HTML", "CSS", "Bootstrap", "Node.js", "Express.js", "MongoDB"],
-      link: "https://majorproject-vp2d.onrender.com/listings",
-      image: "/images/wandurlust.png",
+        "Developed an interactive Rock-Paper-Scissor game using HTML5, CSS3, and JavaScript with real-time user input and dynamic UI updates.",
+      tech: ["HTML", "CSS", "Bootstrap", "JavaScript"],
+      link: "https://haldarsayan18.github.io/Play_RockPaperScissor/",
+      image: rockpaperscissor,
     },
-    // {
-    //   title: "Resonance",
-    //   description:
-    //     "A modern online shopping platform inspired by Myntra, built to deliver a smooth user experience for browsing and purchasing fashion and lifestyle products.",
-    //   tech: ["React.js", "Html", "CSS", "JavaScript"],
-    //   link: "https://resonanceapp19.netlify.app/",
-    //   image: "/images/resonance.png",
-    // },
-    // {
-    //   title: "BuzzChat",
-    //   description:
-    //     "A modern online shopping platform inspired by Myntra, built to deliver a smooth user experience for browsing and purchasing fashion and lifestyle products.",
-    //   tech: ["Node.js", "Express.js", "HTML", "CSS", "Socket.io"],
-    //   link: "https://chatapp-5fh8.onrender.com/",
-    //   image: "/images/buzzchat.png",
-    // },
-    // ,
-    // {
-    //   title: "Resonance",
-    //   description:
-    //     "A modern online shopping platform inspired by Myntra, built to deliver a smooth user experience for browsing and purchasing fashion and lifestyle products.",
-    //   tech: ["React.js", "Html", "CSS", "JavaScript"],
-    //   link: "https://resonanceapp19.netlify.app/",
-    //   image: "/images/resonance.png",
-    // },
-    // ,
-    // {
-    //   title: "Resonance",
-    //   description:
-    //     "A modern online shopping platform inspired by Myntra, built to deliver a smooth user experience for browsing and purchasing fashion and lifestyle products.",
-    //   tech: ["React.js", "Html", "CSS", "JavaScript"],
-    //   link: "https://resonanceapp19.netlify.app/",
-    //   image: "/images/resonance.png",
-    // },
+    {
+      title: "To-Do List",
+      description:
+        "Developed a simple todo list using react basics, where there is some data already present and one can add more tasks and can remove those data/tasks individually.",
+      tech: ["HTML", "CSS", "Bootstrap", "JavaScript", "React Js", "Dummy API"],
+      link: "https://github.com/HaldarSayan18/ToDo_list",
+      image: rockpaperscissor,
+    },
   ];
 
   return (

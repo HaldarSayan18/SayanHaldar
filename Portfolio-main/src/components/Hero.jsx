@@ -5,6 +5,7 @@ import swd from '../assets/swd.json';
 import devAnimation from "../assets/developer.json";
 import { Link } from "react-scroll";
 import Typewriter from "typewriter-effect";
+import resume from "../../public/Sayanhaldar_resume.pdf";
 
 const Hero = ({ islightmode }) => {
   return (
@@ -60,7 +61,7 @@ const Hero = ({ islightmode }) => {
             </button>
           </Link>
 
-          <a href="/SayanHaldar_resume" download>
+          <a href={resume} download>
             <button className="relative inline-block px-4 sm:px-6 py-3 rounded text-white font-semibold group">
               <span className="absolute inset-0 rounded-lg p-[2px] bg-gradient-to-r animate-gradient-x group-hover:animate-gradient-x z-0 border border-purple-500"></span>
               <span
