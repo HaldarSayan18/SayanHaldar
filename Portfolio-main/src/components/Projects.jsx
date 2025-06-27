@@ -3,9 +3,18 @@ import { ExternalLink } from "lucide-react";
 
 import rockpaperscissor from "../../public/images/rockpaperscissor.png";
 import todo from "../../public/images/todo.jpg";
+import mutualmate from "../../public/images/mutualmate.png";
 
 const Projects = ({ islightmode }) => {
   const projects = [
+    {
+      title: "MutualMate",
+      description:
+        "A secure MERN stack web application enabling users to browse mutual fund data, save favorite schemes, and manage accounts with JWT-based authentication.",
+      tech: ["React Js", "Node Js", "Mongo DB", "Bootstrap", "Dummy API"],
+      link: "https://mutualmate.onrender.com/",
+      image: mutualmate,
+    },
     {
       title: "Rock_Paper_Scissor",
       description:

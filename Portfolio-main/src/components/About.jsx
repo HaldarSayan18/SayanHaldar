@@ -7,11 +7,14 @@ import javaLogo from '../../public/icons/java.png';
 import webLogo from '../../public/icons/web.png';
 import pythonLogo from '../../public/icons/python.png';
 import sqlLogo from '../../public/icons/sql.png';
+import mongodb from '../../public/icons/mongodb.png';
 import html from "../../public/icons/html.png";
 import css from "../../public/icons/css.png";
 import java from "../../public/icons/java.png";
 import javaScript from "../../public/icons/javaScript.png";
 import react from "../../public/icons/react.png";
+import node from "../../public/icons/node.png";
+import express from "../../public/icons/express.png";
 import bootstrap from "../../public/icons/Bootstrap.png";
 import tailwind from "../../public/icons/tailwindcss.png";
 import wordpress from "../../public/icons/wordpress.png";
@@ -47,12 +50,13 @@ const About = ({ islightmode }) => {
     { src: java, alt: "java" },
     { src: pythonLogo, alt: "python" },
     { src: react, alt: "react" },
-    // { src: "/public/icons/node.png", alt: "Node.js" },
-    // { src: "/public/icons/express.png", alt: "Express" },
+    { src: node, alt: "Node.js" },
+    { src: express, alt: "Express" },
     { src: bootstrap, alt: "bootstrap" },
     { src: tailwind, alt: "tailwind_css" },
     { src: vscode, alt: "vscode" },
     { src: sqlLogo, alt: "sql" },
+    { src: mongodb, alt: "mongodb" },
     { src: wordpress, alt: "wordpress" },
   ];
 
