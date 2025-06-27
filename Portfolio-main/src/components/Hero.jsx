@@ -33,7 +33,7 @@ const Hero = ({ islightmode }) => {
               options={{
                 strings: [
                   "Software Developer",
-                  "React & JavaScript Developer",
+                  "MERN Developer",
                   "Java Enthusiast",
                   "Modern UI Designer",
                 ],
