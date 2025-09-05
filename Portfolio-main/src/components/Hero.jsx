@@ -5,7 +5,7 @@ import swd from '../assets/swd.json';
 import devAnimation from "../assets/developer.json";
 import { Link } from "react-scroll";
 import Typewriter from "typewriter-effect";
-import resume from "../../public/Sayanhaldar_resume.pdf";
+import resume from "../../public/SayanHaldar_resume.pdf";
 
 const Hero = ({ islightmode }) => {
   return (
