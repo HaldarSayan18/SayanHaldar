@@ -4,6 +4,7 @@ import { ExternalLink } from "lucide-react";
 import rockpaperscissor from "../../public/images/rockpaperscissor.png";
 import todo from "../../public/images/todo.jpg";
 import mutualmate from "../../public/images/mutualmate.png";
+import careNcure from "../../public/images/careNcure.png";
 
 const Projects = ({ islightmode }) => {
   const projects = [
@@ -14,6 +15,14 @@ const Projects = ({ islightmode }) => {
       tech: ["React Js", "Node Js", "Mongo DB", "Bootstrap", "Dummy API"],
       link: "https://mutualmate.onrender.com/",
       image: mutualmate,
+    },
+    {
+      title: "careNcure",
+      description:
+        "Developed a responsive healthcare management web application that enables patients to register, book doctor appointments, and view hospital bed availability.",
+      tech: ["React Js", "Bootstrap", "Java", "MySQL"],
+      link: "https://care-ncure.vercel.app/",
+      image: careNcure,
     },
     {
       title: "Rock_Paper_Scissor",
