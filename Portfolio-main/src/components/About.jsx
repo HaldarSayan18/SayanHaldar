@@ -13,10 +13,12 @@ import css from "../../public/icons/css.png";
 import java from "../../public/icons/java.png";
 import javaScript from "../../public/icons/JavaScript.png";
 import react from "../../public/icons/react.png";
+import nextjs from "../../public/icons/nextjs.png";
 import node from "../../public/icons/node.png";
 import express from "../../public/icons/express.png";
 import bootstrap from "../../public/icons/BootStrap.png";
 import tailwind from "../../public/icons/tailwindcss.png";
+import zustand from "../../public/icons/zustand.png";
 import wordpress from "../../public/icons/wordpress.png";
 import vscode from "../../public/icons/vscode.png";
 
@@ -50,10 +52,12 @@ const About = ({ islightmode }) => {
     { src: java, alt: "java" },
     { src: pythonLogo, alt: "python" },
     { src: react, alt: "react" },
+    { src: nextjs, alt: "nextjs" },
     { src: node, alt: "Node.js" },
     { src: express, alt: "Express" },
     { src: bootstrap, alt: "bootstrap" },
     { src: tailwind, alt: "tailwind_css" },
+    { src: zustand, alt: "zustand" },
     { src: vscode, alt: "vscode" },
     { src: sqlLogo, alt: "sql" },
     { src: mongodb, alt: "mongodb" },

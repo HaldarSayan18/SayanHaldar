@@ -5,6 +5,7 @@ import rockpaperscissor from "../../public/images/rockpaperscissor.png";
 import todo from "../../public/images/todo.jpg";
 import mutualmate from "../../public/images/mutualmate.png";
 import careNcure from "../../public/images/careNcure.png";
+import zustcart from "../../public/images/zustcart.png";
 
 const Projects = ({ islightmode }) => {
   const projects = [
@@ -15,6 +16,14 @@ const Projects = ({ islightmode }) => {
       tech: ["React Js", "Node Js", "Mongo DB", "Bootstrap", "Dummy API"],
       link: "https://mutualmate.onrender.com/",
       image: mutualmate,
+    },
+    {
+      title: "ZustCart",
+      description:
+        "Developed a responsive e-commerce web application that allows users to browse products, add or remove items from the cart, and view the total price with persistent cart state.",
+      tech: ["React Js", "Node Js", "Tailwind", "Zustand", "MongoDB", "Dummy API"],
+      link: "https://haldarsayan18.github.io/ZustCart/",
+      image: zustcart,
     },
     {
       title: "careNcure",
