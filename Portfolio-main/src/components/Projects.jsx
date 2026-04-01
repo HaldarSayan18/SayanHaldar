@@ -16,6 +16,7 @@ const Projects = ({ islightmode }) => {
       tech: ["React Js", "Node Js", "Mongo DB", "Bootstrap", "Dummy API"],
       link: "https://mutualmate.onrender.com/",
       image: mutualmate,
+      status: "completed",
     },
     {
       title: "ZustCart",
@@ -24,6 +25,7 @@ const Projects = ({ islightmode }) => {
       tech: ["React Js", "Node Js", "Tailwind", "Zustand", "MongoDB", "Dummy API"],
       link: "https://haldarsayan18.github.io/ZustCart/",
       image: zustcart,
+      status: "ongoing",
     },
     {
       title: "careNcure",
@@ -32,6 +34,7 @@ const Projects = ({ islightmode }) => {
       tech: ["React Js", "Bootstrap", "Java", "MySQL"],
       link: "https://care-ncure.vercel.app/",
       image: careNcure,
+      status: "completed",
     },
     {
       title: "Rock_Paper_Scissor",
@@ -40,6 +43,7 @@ const Projects = ({ islightmode }) => {
       tech: ["HTML", "CSS", "Bootstrap", "JavaScript"],
       link: "https://haldarsayan18.github.io/Play_RockPaperScissor/",
       image: rockpaperscissor,
+      status: "completed",
     },
     {
       title: "To-Do List",
@@ -48,15 +52,15 @@ const Projects = ({ islightmode }) => {
       tech: ["HTML", "CSS", "Bootstrap", "JavaScript", "React Js", "Dummy API"],
       link: "https://github.com/HaldarSayan18/ToDo_list",
       image: todo,
+      status: "completed",
     },
   ];
 
   return (
     <div
       id="projects"
-      className={`transition-colors ease-linear duration-700 min-h-screen py-10 px-6 md:px-20 ${
-        islightmode ? "text-black bg-gray-200" : "text-white bg-black"
-      }`}
+      className={`transition-colors ease-linear duration-700 min-h-screen py-10 px-6 md:px-20 ${islightmode ? "text-black bg-gray-200" : "text-white bg-black"
+        }`}
     >
       <div className="max-w-6xl mx-auto">
         {/* Section Header */}
@@ -69,11 +73,10 @@ const Projects = ({ islightmode }) => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className={`rounded-2xl shadow-xl flex flex-col overflow-hidden transition-all duration-700 transform hover:scale-[1.03] hover:shadow-2xl ${
-                islightmode
-                  ? "bg-gray-200 text-gray-800"
-                  : "bg-neutral-800 text-gray-200"
-              }`}
+              className={`rounded-2xl shadow-xl flex flex-col overflow-hidden transition-all duration-700 transform hover:scale-[1.03] hover:shadow-2xl ${islightmode
+                ? "bg-gray-200 text-gray-800"
+                : "bg-neutral-800 text-gray-200"
+                }`}
             >
               {/* Project Image */}
               {project.image && (
@@ -86,17 +89,21 @@ const Projects = ({ islightmode }) => {
               )}
 
               {/* Project Details */}
-              <div className="flex flex-col justify-between flex-1 p-5 space-y-4">
-                <div>
-                  <h3 className="text-xl font-bold">{project.title}</h3>
-                  <p className="text-sm mt-2">{project.description}</p>
+              <div className="grid grid-cols-1 justify-between flex-1 p-5 space-y-4">
+                <div className="flex flex-col">
+                  <div className="grid grid-cols-2">
+                    <h3 className="text-xl font-bold">{project.title}</h3>
+                    <h3 className={`text-xs font-semibold px-1 rounded-full flex items-center justify-center ml-auto border-0 ${project.status === "completed" ?" bg-[#82f7adb2] text-green-900" : project.status === "ongoing" ? "bg-[#f7ef77d2] text-yellow-700" : "bg-red-400 text-red-900"}`}>
+                      {project.status}
+                    </h3>
+                  </div>
+                  <p className="text-sm mt-2">{project.description}</p> 
                   <div className="flex flex-wrap gap-2 mt-3 text-xs">
                     {project.tech.map((tech, i) => (
                       <span
                         key={i}
-                        className={`px-2 py-1 transition-colors ease-linear duration-700 rounded-full ${
-                          islightmode ? "bg-gray-300" : "bg-gray-700"
-                        }`}
+                        className={`px-2 py-1 transition-colors ease-linear duration-700 rounded-full ${islightmode ? "bg-gray-300" : "bg-gray-700"
+                          }`}
                       >
                         {tech}
                       </span>
