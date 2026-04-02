@@ -34,7 +34,7 @@ const Projects = ({ islightmode }) => {
       tech: ["React Js", "Bootstrap", "Java", "MySQL"],
       link: "https://care-ncure.vercel.app/",
       image: careNcure,
-      status: "completed",
+      status: "ongoing",
     },
     {
       title: "Rock_Paper_Scissor",
