@@ -27,7 +27,7 @@ const Contact = ({ islightmode }) => {
   return (
     <div
       id="contact"
-      className={`pt-5 px-4 sm:px-6 md:px-20 transition-colors duration-700 ${islightmode ? "text-black bg-gray-200" : "text-white bg-black"
+      className={`pt-5 px-4 sm:px-6 md:px-20 transition-colors duration-700 ${islightmode ? "text-black bg-gray-100" : "text-white bg-black"
         }`}
     >
       {/* Autofill fix */}
@@ -41,10 +41,10 @@ const Contact = ({ islightmode }) => {
         }
       `}</style>
 
-      <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-semibold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-green-500 via-blue-500 to-yellow-500 animate-gradient-x" style={{ color: "rgb(190, 7, 190)" }}>
-          Contact Me
-        </h2>
+      <div className="w-full flex flex-col gap-10 items-center justify-center">
+        <h3 className="text-3xl text-transparent bg-clip-text bg-gradient-to-r from-blue-900 via-blue-600 to-blue-400 animate-gradient-x mt-10">
+          <strong>Contact Me</strong>
+          </h3>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
           {/* Form */}
@@ -99,7 +99,7 @@ const Contact = ({ islightmode }) => {
                 ></textarea>
                 <button
                   type="submit"
-                  className="w-full py-3 px-6 rounded-md font-semibold bg-gradient-to-r from-green-500 via-blue-500 to-yellow-500 text-white hover:opacity-90 transition" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 5 }}
+                  className="w-full py-3 px-6 rounded-md font-semibold bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 text-white hover:opacity-90 transition" style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 5 }}
                 >
                   Send Message <LuSend style={{ height: 22, width: 22 }} />
                 </button>

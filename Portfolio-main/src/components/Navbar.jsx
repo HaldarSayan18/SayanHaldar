@@ -6,7 +6,7 @@ const Navbar = ({ islightmode, setIslightmode }) => {
   return (
     <div
       className={`w-screen h-16 flex fixed items-center p-5 md:p-0 justify-between md:justify-around transition-colors ease-linear duration-700 z-50 ${
-        islightmode ? "text-black bg-white" : "text-white bg-black"
+        islightmode ? "text-black bg-[#ffffffed]" : "text-white bg-[#000000d2]"
       }`}
     >
       <ScrollLink
@@ -15,7 +15,7 @@ const Navbar = ({ islightmode, setIslightmode }) => {
         duration={500}
         className="cursor-pointer"
       >
-        <h2 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-500 via-blue-500 to-yellow-500 animate-gradient-x">
+        <h2 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 animate-gradient-x">
           Sayan Haldar
         </h2>
       </ScrollLink>

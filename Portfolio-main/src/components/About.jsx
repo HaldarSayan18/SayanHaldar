@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import './About.css';
 import Marquee from "react-fast-marquee";
 import { ExternalLink, FileBadge, GraduationCap, MapPin } from "lucide-react";
 
@@ -78,13 +77,13 @@ const About = ({ islightmode }) => {
   return (
     <div
       id="about"
-      className={`transition-colors ease-linear duration-700 min-h-screen py-10 px-6 lg:px-20 ${islightmode ? "text-black bg-gray-100" : "text-white bg-black"
+      className={`transition-colors ease-linear duration-700 min-h-screen py-10 px-6 lg:px-20 ${islightmode ? "text-black bg-gray-100" : "text-white bg-[#000000f5]"
         }`}
     >
-      <div className="w-full">
+      <div className="w-full flex flex-col gap-5 items-center justify-center">
         {/* Section Header */}
-        <h2 className="text-4xl font-semibold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-green-500 via-blue-500 to-yellow-500 animate-gradient-x">
-          About Me
+        <h2 className="text-3xl text-transparent bg-clip-text bg-gradient-to-r from-blue-900 via-blue-600 to-blue-400 animate-gradient-x">
+          <strong>About Me</strong>
         </h2>
 
         {/* About Text + College Card + Certificate Card */}
@@ -144,7 +143,7 @@ const About = ({ islightmode }) => {
               </p>
               <div className="flex items-center gap-2 mt-2 text-sm text-gray-600 dark:text-gray-400">
                 <MapPin size={16} />
-                CEM, Kolaghat<br/> Purba Medinipur
+                CEM, Kolaghat<br /> Purba Medinipur
               </div>
             </div>
           </div>
@@ -191,31 +190,38 @@ const About = ({ islightmode }) => {
 
         {/* what I can do */}
         {/* Web/Desktop View: Normal List */}
-        <section className="service hidden md:flex">
-          <h3 className="h3 service-title article-title"><strong>What I Can Do</strong></h3>
-          <ul className="service-list">
+        <section className="flex flex-col items-center justify-center gap-5">
+          <h3 className="text-3xl text-transparent bg-clip-text bg-gradient-to-r from-blue-900 via-blue-600 to-blue-400 animate-gradient-x mt-10"><strong>What I Can Do</strong></h3>
+          <ul className="grid grid-cols-1 lg:grid-cols-2 gap-10 border-0 min-h-[200px]">
+
             {/* java */}
-            <li className="service-item">
-              <div className="service-icon-box">
+            <li className={`w-full h-full flex flex-col items-center justify-center px-5 py-5 lg:py-1 rounded-2xl border-0 border-[#d43a02] ${islightmode ? "shadow-md shadow-gray-400" : "shadow-sm shadow-[#ff4502]"}`}>
+              <div className="">
                 <img src={javaLogo} alt="Java icon" width="70" />
               </div>
-              <div className="service-content-box">
+              <div className="flex flex-col text-center">
                 <h4 className="h4 service-item-title">Java Development</h4>
                 <p className="service-item-text">
-                  The most modern and high performance programming language.
+                  Modern and high performance programming language.
                 </p>
               </div>
             </li>
+
             {/* web */}
-            <li className="service-item">
-              <div className="service-icon-box">
+            <li className={`w-full h-full flex flex-col items-center justify-center px-5 py-6 lg:py-1 rounded-2xl border-0 border-[#3fc8f4] ${islightmode ? "shadow-md shadow-gray-400" : "shadow-sm shadow-[#3fc7f4]"}`}>
+              <div className="">
                 <img src={webLogo} alt="Web development icon" width="65" />
+                {/* <img src={javaLogo} alt="Java icon" width="70" /> */}
               </div>
-              <div className="service-content-box">
+              <div className="flex flex-col text-center">
                 <h4 className="h4 service-item-title">Web Development</h4>
+                {/* <h4 className="h4 service-item-title">Java Development</h4> */}
                 <p className="service-item-text">
                   High-quality development of sites at the professional level.
                 </p>
+                {/* <p className="service-item-text">
+                  The most modern and high performance programming language.
+                </p> */}
               </div>
             </li>
           </ul>
@@ -300,7 +306,7 @@ const About = ({ islightmode }) => {
         {/* Tech Stack Marquee */}
         <div className="relative transition-colors ease-linear duration-700 overflow-hidden mt-16">
           <Marquee
-            speed={50}
+            speed={100}
             gradient={true}
             gradientWidth={60}
             gradientColor={islightmode ? [226, 232, 240] : [23, 23, 23]}

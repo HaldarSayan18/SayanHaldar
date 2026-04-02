@@ -10,7 +10,7 @@ import resume from "../../public/SayanHaldar_resume.pdf";
 const Hero = ({ islightmode }) => {
   return (
     <div
-      className={`flex flex-col lg:flex-row justify-center pt-20 gap-2 xl:gap-28 items-center transition-colors ease-linear duration-700 min-h-screen ${islightmode ? "text-black bg-gray-200" : "text-white bg-black"
+      className={`flex flex-col lg:flex-row justify-center pt-20 gap-2 xl:gap-28 items-center transition-colors ease-linear duration-700 min-h-screen ${islightmode ? "text-black bg-gray-200" : "text-white bg-gray-900"
         }`}
     >
       {/* Left Section */}
@@ -21,7 +21,7 @@ const Hero = ({ islightmode }) => {
         <div>
           <h4 className="text-2xl sm:text-4xl md:text-5xl font-bold">
             Namaste, Myself <br />
-            <span className="text-2xl sm:text-4xl md:text-6xl ml-6 font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-500 via-blue-500 to-yellow-500 animate-gradient-x">
+            <span className="text-2xl sm:text-4xl md:text-6xl ml-6 font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-800 via-blue-500 to-blue-300 animate-gradient-x">
               Sayan Haldar
             </span>
           </h4>

@@ -59,7 +59,7 @@ const Projects = ({ islightmode }) => {
   return (
     <div
       id="projects"
-      className={`transition-colors ease-linear duration-700 min-h-screen py-10 px-6 md:px-20 ${islightmode ? "text-black bg-gray-200" : "text-white bg-black"
+      className={`transition-colors ease-linear duration-700 min-h-screen py-10 px-6 md:px-20 ${islightmode ? "text-black bg-gray-200" : "text-white bg-[#000000f2]"
         }`}
     >
       <div className="max-w-6xl mx-auto">
