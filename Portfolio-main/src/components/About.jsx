@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import './About.css';
 import Marquee from "react-fast-marquee";
-import { GraduationCap, MapPin } from "lucide-react";
+import { ExternalLink, FileBadge, GraduationCap, MapPin } from "lucide-react";
 
 import javaLogo from '../../public/icons/java.png';
 import webLogo from '../../public/icons/web.png';
@@ -45,6 +45,7 @@ const About = ({ islightmode }) => {
     };
   }, []);
 
+  // tech stack
   const techStack = [
     { src: html, alt: "html" },
     { src: css, alt: "css" },
@@ -64,31 +65,49 @@ const About = ({ islightmode }) => {
     { src: wordpress, alt: "wordpress" },
   ];
 
+  // certificate data
+  const certificates = [
+    {
+      id: 1,
+      title: "Certificate of Completion",
+      link: "https://drive.google.com/file/d/1lxdz0n_OpGkL4LbhVQnOdX4PXo_X4Q0D/view",
+      description: "Participated in a 5-days Full Stack Web Development Bootcamp",
+    },
+  ];
+
   return (
     <div
       id="about"
-      className={`transition-colors ease-linear duration-700 min-h-screen py-10 px-6 md:px-20 ${islightmode ? "text-black bg-gray-200" : "text-white bg-black"
+      className={`transition-colors ease-linear duration-700 min-h-screen py-10 px-6 lg:px-20 ${islightmode ? "text-black bg-gray-100" : "text-white bg-black"
         }`}
     >
-      <div className="max-w-6xl mx-auto">
+      <div className="w-full">
         {/* Section Header */}
         <h2 className="text-4xl font-semibold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-green-500 via-blue-500 to-yellow-500 animate-gradient-x">
           About Me
         </h2>
 
-        {/* About Text + College Card */}
-        <div className="flex flex-col lg:flex-row gap-12 lg:gap-16 items-start">
+        {/* About Text + College Card + Certificate Card */}
+        <div className="grid grid-cols-1 lg:grid-cols-5 items-stretch gap-5">
           {/* About Text */}
-          <div className=" lg:w-2/3 space-y-6  text-base sm:text-md md:text-lg leading-relaxed tracking-wide text-justify transition-colors ease-linear duration-700 text-gray-600 dark:text-gray-500">
-            <p>
+          <div className={`col-span-2 px-5 py-2 text-md lg:text-lg border rounded-2xl text-gray-700 dark:text-gray-500 flex item-start justify-center transition-colors ease-linear duration-700 shadow-md h-full lg:h-[400px]
+                    ${islightmode
+              ? "bg-transparent border-gray-50 text-gray-600"
+              : "bg-transparent border-gray-950 text-gray-300"
+            }
+                      ${isVisible ? "translate-x-0 opacity-100" : "translate-x-20 opacity-0"}
+                    `}
+          >
+            <p className="leading-relaxed text-justify h-body overflow-y-auto no-scrollbar">
               Hi, I'm <strong>Sayan Haldar</strong>, a passionate Software
               Developer dedicated to building efficient and scalable web
               applications. I have expertise in front-end, focusing on delivering smooth and intuitive user
               experiences.
               <br />
               My skill set includes <strong>React.js</strong>,{" "}
-              <strong>JavaScript</strong>, {" "}
-              <strong>WordPress</strong> and other
+              <strong>Next.js</strong>, {" "}
+              <strong>Node.js</strong>, {" "}
+              <strong>MySQL</strong>, {" "} and other
               modern technologies. I’m passionate about building scalable solutions and continuously learning emerging technologies to optimize performance and maintainability.
               <br />
               Besides, I enjoy collaborating with fellow
@@ -98,24 +117,23 @@ const About = ({ islightmode }) => {
           </div>
 
           {/* College Card */}
-          <div className="lg:w-1/3 flex justify-center self-start  mx-auto">
+          <div className="col-span-1 flex items-start justify-center">
             <div
               id="college-card"
-              className={`border rounded-2xl shadow-xl p-6 w-full max-w-sm
-    transition-colors ease-linear duration-700 
-    ${islightmode
+              className={`border rounded-2xl shadow-md p-6 w-full h-full lg:h-[400px] transition-colors ease-linear duration-700 
+                ${islightmode
                   ? "bg-gray-100 border-gray-300 text-gray-600"
                   : "bg-neutral-900 border-neutral-700 text-gray-300"
                 }
-    ${isVisible ? "translate-x-0 opacity-100" : "translate-x-20 opacity-0"}
-  `}
+                ${isVisible ? "translate-x-0 opacity-100" : "translate-x-20 opacity-0"}
+              `}
             >
-              <div className="flex  items-center gap-3 mb-4">
+              <div className="flex items-center gap-3 mb-4">
                 <GraduationCap size={28} className="text-blue-500" />
-                <h3 className="text-2xl font-semibold">My College</h3>
+                <h3 className="text-xl font-semibold">Graduation</h3>
               </div>
               <p className="mb-2">
-                <strong>College of Engineering & Management, Kolaghat</strong>
+                <strong>Maulana Abul Kalam Azad University of Technology - WB</strong>
               </p>
               <p className="text-sm mb-2">
                 Bachelor of Technology (B.Tech) in Information Technology
@@ -126,14 +144,52 @@ const About = ({ islightmode }) => {
               </p>
               <div className="flex items-center gap-2 mt-2 text-sm text-gray-600 dark:text-gray-400">
                 <MapPin size={16} />
-                Purba Medinipur, Kolaghat
+                CEM, Kolaghat<br/> Purba Medinipur
               </div>
+            </div>
+          </div>
+
+          {/* Certificate Card */}
+          <div className="col-span-2 flex justify-center h-[400px]">
+            <div
+              id="college-card"
+              className={`flex flex-col border rounded-2xl shadow-md p-5 w-full h-full transition-colors ease-linear duration-700 
+                    ${islightmode
+                  ? "bg-gray-100 border-gray-300 text-gray-600"
+                  : "bg-neutral-900 border-neutral-700 text-gray-300"
+                }
+                      ${isVisible ? "translate-x-0 opacity-100" : "translate-x-20 opacity-0"}
+                    `}
+            >
+              <div className="flex items-center gap-3 mb-4 shrink-0">
+                <FileBadge size={25} className="text-blue-500" />
+                <h3 className="text-2xl font-semibold">My Certifications</h3>
+              </div>
+              <ol className="flex-1 overflow-y-auto no-scrollbar pr-2">
+                {certificates.map((cert, index) => (
+                  <li key={index} className="mb-5 last:mb-0 border-l-2 border-blue-500/10 pl-4 hover:border-blue-500 transition-colors">
+                    <a
+                      href={cert.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="group text-lg font-semibold text-blue-500 block transition-colors hover:text-blue-400"
+                    >
+                      {cert.title}
+                      <span className="hidden group-hover:inline-block ml-0.5">
+                        <ExternalLink size={18} />
+                      </span>
+                    </a>
+                    <p className="text-sm mt-1 text-gray-600 dark:text-gray-400 leading-snug">
+                      {cert.description}
+                    </p>
+                  </li>
+                ))}
+              </ol>
             </div>
           </div>
         </div>
 
         {/* what I can do */}
-
         {/* Web/Desktop View: Normal List */}
         <section className="service hidden md:flex">
           <h3 className="h3 service-title article-title"><strong>What I Can Do</strong></h3>
